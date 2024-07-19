@@ -5,38 +5,130 @@
 }
 
 * {
-  margin: 0;
+  padding: 0;
+}
+
+.header-container,
+.footer-container {
+  background: darkgray;
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
 }
 
 body {
-  display: flexbox;
-}
-
-.header-container {
-  background-color: lightgray;
-  height: 50px;
-}
-
-.footer-container {
-  background-color: lightgray;
-  height: 50px;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
 }
 
 .calculator-container {
-  display: flexbox;
   background-color: beige;
-  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 20;
+  padding: 20px;
 }
 
 .calculator-outer-case {
-  max-width: 400px;
+  display: flex;
+  min-width: 250px;
+  max-height: 500px;
+  height: 80%;
+  width: 30%;
   padding: 10px;
+  border-radius: 10px;
+  border: 1px solid black;
   background-color: var(--calculator-outer-case-color);
+  flex-shrink: 0;
 }
 
 .calculator-inner-case {
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+
   padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid rgb(66, 66, 66);
   background-color: var(--calculator-inner-case-color);
 }
 
+.result-display {
+  flex: 1;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 24px;
+  color: #36395a;
+  text-align: left;
+  text-decoration: none;
+  padding: 5px;
+  margin-bottom: 5px;
+  border-radius: 3px;
+  background-color: rgb(222, 255, 203);
+  flex-shrink: 3;
+  min-width: 200px;
+}
 
+.calculator-buttons-container {
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  min-width: 200px;
+}
+
+.button-row {
+  display: flex;
+  height: 10%;
+  flex: 1;
+  flex-basis: 0;
+}
+
+.button-row button {
+  flex: 1;
+  margin: 1px;
+  align-items: center;
+  background-color: #fcfcfd;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395a;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono", monospace;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s;
+  user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 18px;
+}
+
+button:focus {
+  box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+}
+
+button:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+button:active {
+  box-shadow: #d6d6e7 0 3px 7px inset;
+  transform: translateY(2px);
+}
