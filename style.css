@@ -1,6 +1,6 @@
 :root {
   --main-bg-color: beige;
-  --calculator-outer-case-color: rgb(231, 231, 231);
+  --calculator-outer-case-color: rgb(36, 36, 36);
   --calculator-inner-case-color: darkgray;
 }
 
@@ -67,10 +67,14 @@ body {
   text-decoration: none;
   padding: 5px;
   margin-bottom: 5px;
-  border-radius: 3px;
-  background-color: rgb(222, 255, 203);
   flex-shrink: 3;
   min-width: 200px;
+  
+  background: rgb(192, 255, 155);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
 }
 
 .calculator-buttons-container {
