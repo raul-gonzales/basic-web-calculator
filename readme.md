@@ -12,8 +12,8 @@ This project is a simple web calculator that uses all of the skills and techniqu
 - [ ] Track & Store operands for updating display
   
 ##### GUI
-- [ ] Buttons for digits and operators (0-9,+,-,*,/,=)
-- [ ] Button to clear numbers/operator (c)
+- [x] Buttons for digits and operators (0-9,+,-,*,/,=)
+- [x] Button to clear numbers/operator (c)
 - [ ] Display for operands
 
 The *node_modules* folder was not included to avoid slow commits. To run the operators unit test files, you must have the *node_modules* file which can be obtained by going to terminal of root directory and entering the command
