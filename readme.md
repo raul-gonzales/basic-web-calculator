@@ -3,15 +3,21 @@ This project is a simple web calculator that uses all of the skills and techniqu
 
 ### Tasks
 ##### Functionality
-- [ ] Functions for basic math operators
-  - [ ] Add
-  - [ ] Subtract
-  - [ ] Multiply
-  - [ ] Divide
-- [ ] Perform Unit Test as functions are created
+- [x] Functions for basic math operators
+  - [x] Add
+  - [x] Subtract
+  - [x] Multiply
+  - [x] Divide
+- [x] Perform Unit Test as functions are created
 - [ ] Track & Store operands for updating display
   
 ##### GUI
 - [ ] Buttons for digits and operators (0-9,+,-,*,/,=)
 - [ ] Button to clear numbers/operator (c)
 - [ ] Display for operands
+
+*node_modules* files not included so as to not slow down the git commits. to run the operators unit test files, you must have node_modules file which can be obtained by going to terminal of root directory and entering the command
+```mpm i --save-dev jest```
+
+once *node_modules* are installed locally, enter the command ```npm test base_functions.test.js``` to run the unit test.
+

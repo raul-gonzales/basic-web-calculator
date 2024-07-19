@@ -11,12 +11,13 @@ const multiply = function (a, b) {
 };
 
 const divide = function (a, b) {
-    return a / b;
-  };
+  if (b === 0) return "ERROR";
+  else return a / b;
+};
 
 module.exports = {
   add,
   subtract,
   multiply,
-  divide
+  divide,
 };

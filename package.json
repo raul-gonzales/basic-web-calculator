@@ -1,0 +1,15 @@
+{
+  "name": "basic-web-calculator",
+  "version": "1.0.0",
+  "description": "This project is a simple web calculator that uses all of the skills and techniques learned from the TOP foundations course. Basic functionalities of a calculator will be implemented, along with a simple graphical user interface.",
+  "main": "script.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
