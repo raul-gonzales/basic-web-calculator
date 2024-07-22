@@ -27,16 +27,16 @@ The base functionalities for the calculator are implemented. For what it is mean
 ###### *Improvements and potential solutions*
 **Improvement 1** - Digits overflowing the calculator display screen when there are too many to display.
 **Possible solutions:**
-- [ ] Add a limit to the operands buffer
-- [ ] Shrink display text size as operand string count increases (*much more complex than above*)
+- Add a limit to the operands buffer
+- Shrink display text size as operand string count increases (*much more complex than above*)
 
 **Improvement 2** - There is a limit of two operands and users cannot keep applying the same operation to the result once the equate button is clicked.
 **Possible solutions:**
-- [ ] Generate new operand variables to hold new values as the operator buttons are clicked.
-  - [ ] This would mean a certain order must be applied to the equation (BEDMAS/PEMDAS)
-  - [ ] Complex and will need refactoring
-- [ ] Keep track of history as long as clr button is not clicked.
-  - [ ] Maintain the same operator as the operation if multiple operands will be implemented
+- Generate new operand variables to hold new values as the operator buttons are clicked.
+  - This would mean a certain order must be applied to the equation (BEDMAS/PEMDAS)
+  - Complex and will need refactoring
+- Keep track of history as long as clr button is not clicked.
+  - Maintain the same operator as the operation if multiple operands will be implemented
 
 #### Appendix
 ![Screenshot of the initial calculator GUI along with bullet points of my early pseudocode and thought process. This was made using app.diagrams.net](images/project_online_basic_calculator.png)
