@@ -39,4 +39,4 @@ The base functionalities for the calculator are implemented. For what it is mean
   - [ ] Maintain the same operator as the operation if multiple operands will be implemented
 
 #### Appendix
-![Screenshot of the initial calculator GUI along with bullet points of my early pseudocode and thought process. This was made using app.diagrams.net](https://github.com/raul-gonzales/basic-web-calculator/images/project_online_basic_calculator.png?raw=true)
+![Screenshot of the initial calculator GUI along with bullet points of my early pseudocode and thought process. This was made using app.diagrams.net](images/project_online_basic_calculator.PNG)
